@@ -121,7 +121,7 @@ def enumerateChild(parent_pq, data=None):
                     print('Processing {}...'.format(href))
                     
                     data[child_name][2][-1]['Child'] = {}
-                    #enumerateChild(pq(getFileFromURL(TEMPLATE_PAGE_URL.format(href))), data[child_name][2][-1]['Child'])
+                    enumerateChild(pq(getFileFromURL(TEMPLATE_PAGE_URL.format(href))), data[child_name][2][-1]['Child'])
                 
                 return True
                 
