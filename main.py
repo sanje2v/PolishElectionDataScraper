@@ -1,3 +1,6 @@
+# Written by: Sanjeev Sharma
+# https://sanje2v.wordpress.com/
+
 from pyquery import PyQuery as pq
 import json
 import requests
@@ -121,7 +124,8 @@ def enumerateChild(parent_pq, data=None):
                     print('Processing {}...'.format(href))
                     
                     data[child_name][2][-1]['Child'] = {}
-                    enumerateChild(pq(getFileFromURL(TEMPLATE_PAGE_URL.format(href))), data[child_name][2][-1]['Child'])
+                    enumerateChild(pq(getFileFromURL(TEMPLATE_PAGE_URL.format(href))), \
+                                    data[child_name][2][-1]['Child'])
                 
                 return True
                 
