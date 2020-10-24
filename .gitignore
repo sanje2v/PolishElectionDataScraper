@@ -1,4 +1,4 @@
-# Byte-compiled / optimized / DLL files
+https://github.com/sanje2v/PolishElectionDataScraperhttps://github.com/sanje2v/PolishElectionDataScraperhttps://github.com/sanje2v/PolishElectionDataScraper# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -136,3 +136,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# ADDED
+dataset.json
