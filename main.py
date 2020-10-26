@@ -144,9 +144,11 @@ def main():
     
     data = enumerateChild(root_pq)
     
+    print("Writing data to JSON file...")
     with open('dataset.json', 'w') as dataset_file:
         json.dump(data, dataset_file)
     
+    print("=========== FINISHED ===========")
     
     
 if __name__ == '__main__':
